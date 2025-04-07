@@ -4,6 +4,6 @@ Library
 - EAN : 9798629647829
 - Title : Fun Art Project in P5.js for beginners
 - Author : Mrs Nazia FAKHRUDDIN
-- page : 23 to 28
+- page : 37 to 47
 
-[Spaceship with Vertex](../processing/library/9798629647829/003.html)
+[Animating Images](../processing/library/9798629647829/005.html)
