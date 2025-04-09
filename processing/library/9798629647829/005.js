@@ -56,5 +56,4 @@ function draw() {
   https://p5js.org/reference/p5/loadImage/
   https://p5js.org/reference/p5/createCanvas/
   https://p5js.org/reference/p5/vertex/
-  You need to open your pages in a (local) server to load the images.
 */

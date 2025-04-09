@@ -1,17 +1,19 @@
-let mic
-let vol
+let mic;
+let vol;
 
 function setup() {
   createCanvas(400, 400);
   //background(175);
- // mic=new p5.AudioIn();
- // mic.start();
+  mic = new p5.AudioIn(); 
+  //<-- unCaught (in promise) Typeerror : p5.Audio is not a constructor
+  // > In order to use live video/audio, you have to use https! 
+  mic.start();
 }
 
 function draw() { 
   background(225,255,255,0);
-  stroke(10);
-  strokeWeight(10);
+  stroke(0);
+  strokeWeight(1);
   //text(mouseX, 200, 30)
   //text(mouseY, 240, 30)
   
@@ -38,7 +40,7 @@ function draw() {
   stroke(210, 105, 225);
   strokeWeight(3);
   
-  //vol=mic.getLevel();
+  vol=mic.getLevel();
   bezier(226, 146, 266, 147-vol*100, 253-vol*100, 150, 230, 153);
   bezier(226, 158, 261, 155+vol*100, 237, 156+vol*100, 230, 153);
   
@@ -81,5 +83,5 @@ function draw() {
 /*
   https://editor.p5js.org/ri1/sketches/fsMJTmhf   
   https://p5js.org/reference/p5/createCanvas/
-
+  https://p5js.org/reference/p5.sound/p5.AudioIn/
 */

@@ -2,11 +2,11 @@ let posY=0
 let speed=2
 let pic
 
-//function preload() { pic=loadImage('space3b.jpg'); }
+function preload() { pic=loadImage('img/space3b.jpg'); }
 function setup()   { createCanvas(700, 500); }
 function draw() {
   background(220);
-  //image(pic,0,0,700,500);
+  image(pic,0,0,700,500);
   text(mouseX,200,30);
   text(mouseY,240,30);
   strokeWeight(2);
@@ -85,6 +85,5 @@ function draw() {
 /*
   https://editor.p5js.org/ri1/sketches/BVUE9cb3H
   https://p5js.org/reference/p5/loadImage/
-  https://p5js.org/reference/p5/createCanvas/
-  https://p5js.org/reference/p5/vertex/
+  You need to open your pages in a (local) server to load the images.
 */

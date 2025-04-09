@@ -13,6 +13,10 @@ Here you will find details and references for the animations and interactions.
   <br> from _Fun Art projects in p5.js_
 - [**anim-practice-005**](processing/anim-practice-005.md) - p5.js
   <br> from _Fun Art projects in p5.js_
+  
+- [**anim-practice-006**](processing/anim-practice-006.md) - p5.js
+  <br> from _Superfun p5.js projects_
+
 
 - **interact-practice-001** 
 
