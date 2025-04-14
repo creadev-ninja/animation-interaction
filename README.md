@@ -16,7 +16,8 @@ Here you will find details and references for the animations and interactions.
   
 - [**anim-practice-006**](processing/anim-practice-006.md) - p5.js
   <br> from _Superfun p5.js projects_
-
+- [**anim-practice-007**](processing/anim-practice-007.md) - p5.js
+  <br> from _Superfun p5.js projects_
 
 - **interact-practice-001** 
 
