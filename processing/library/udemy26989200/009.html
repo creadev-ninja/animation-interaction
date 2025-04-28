@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introduction to Creative Coding with p5js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js "></script>
+    </head>
+    <body>
+        <h1>Course 7, 8, 9</h1>
+          
+        <form name="formA" method="post">
+        <label>Choose a script</label>
+        <select name="listA" onchange="change()">
+            <option value="">none</option>
+            <option value="?name=009-2-7">var</option>
+            <option value="?name=009-2-8a">ellipse 1</option>
+            <option value="?name=009-2-8b">ellipse 2: text</option>
+            <option value="?name=009-2-8c">Animated Emoji</option>
+            <option value="?name=009-2-9a">Rectangle with round corners</option>
+            <option value="?name=009-2-9b">Arc</option>
+        </select>
+        </form>  
+
+
+
+    <script>
+        // permet d'utiliser les liens avec window.location
+        function change() {
+            if (window.document.formA.listA.selectedIndex != 0) {
+                window.location = window.document.formA.listA.options
+                [document.formA.listA.selectedIndex].value
+            }
+        }
+        // récupère le paramètre d'url 'name'
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        console.log(name);
+
+ 
+
+        </script>
+  
+    </body>
+</html>
+<!-- https://forum.alsacreations.com/topic-1-87494-1-Resolu-Charger-script-Js-apres-requete-Ajax.html -->
