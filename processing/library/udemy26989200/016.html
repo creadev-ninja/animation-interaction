@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introduction to Creative Coding with p5js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js "></script>
+    </head>
+    <body>
+        <h1>Course 4 item 17 to 23</h1>
+          
+        <form name="formA" method="post">
+        <label>Choose a script</label>
+        <select name="listA" onchange="change()">
+            <option value="">none</option>
+            <option value="?name=016-4-18a">Loop 1</option>
+            <option value="?name=016-4-18b">Loop 2</option>
+            <option value="?name=016-4-18c">Loop 3</option>
+            <option value="?name=016-4-19">var</option>
+            <option value="?name=016-4-20">var</option>
+            <option value="?name=016-4-21">var</option>
+            <option value="?name=016-4-22">var</option>
+            <option value="?name=016-4-23">var</option>
+        </select>
+        </form>  
+
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        console.log(name);
+        
+        function change() {
+            if (window.document.formA.listA.selectedIndex != 0) {
+                window.location = window.document.formA.listA.options
+                [document.formA.listA.selectedIndex].value
+            }
+        }
+
+        function selected(val) {
+            const slti = window.document.formA.listA.options
+            [document.formA.listA.selectedIndex].value;
+            console.log('slti = ' + slti + ' / ' + '?name='+val);
+            if( slti == '?name='+val) {slti.setAttribute('selected', true);}
+        }
+
+        if(name != 0) {
+            var head = document.getElementsByTagName('head')[0],
+            script = document.createElement('script');
+            script.src = name + '.js';
+            head.appendChild(script);
+            console.log(name);
+            selected(name);
+        }
+       
+
+        </script>
+  
+    </body>
+</html>
+<!-- 
+https://forum.alsacreations.com/topic-1-87494-1-Resolu-Charger-script-Js-apres-requete-Ajax.html 
+https://stackoverflow.com/questions/6031660/is-it-possible-to-load-new-javascript-files-with-ajax
+
+-->
