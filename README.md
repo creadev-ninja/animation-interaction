@@ -4,6 +4,7 @@ Here you will find details and references for the animations and interactions.
 
 ## Practice
 
+- [**anim-practice-017**](processing/anim-practice-018.md) - p5.js from _Introduction to creative coding with p5js_ book 3 - item 5
 - [**anim-practice-017**](processing/anim-practice-017.md) - p5.js from _Introduction to creative coding with p5js_ book 3 - item 5
 - [**anim-practice-016**](processing/anim-practice-016.md) - p5.js from _Introduction to creative coding with p5js_ book 3 - item 4
 - [**anim-practice-015**](processing/anim-practice-015.md) - p5.js from _Introduction to creative coding with p5js_ book 3 - item 3
