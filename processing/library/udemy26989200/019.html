@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Introduction to Creative Coding with p5js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js "></script>
+    </head>
+    <body>
+        <h1>Course 5 item 29</h1>
+            <form name="formA" method="post">
+        <label>Choose a script</label>
+        <select name="listA" onchange="change()">
+            <option value="">none</option>
+            <option value="?name=019-5-29a">Random walk 1</option>
+            <option value="?name=019-5-29b">Random walk 2</option>
+            <option value="?name=019-5-29c">Random walk 3</option>
+            <option value="?name=019-5-29d">Random walk 4</option>
+        </select>
+        </form>  
+
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        console.log(name);
+        
+        function change() {
+            if (window.document.formA.listA.selectedIndex != 0) {
+                window.location = window.document.formA.listA.options
+                [document.formA.listA.selectedIndex].value
+            }
+        }
+
+        function selected(val) {
+            const slti = window.document.formA.listA.options
+            [document.formA.listA.selectedIndex].value;
+            console.log('slti = ' + slti + ' / ' + '?name='+val);
+            if( slti == '?name='+val) {slti.setAttribute('selected', true);}
+        }
+
+        if(name != 0) {
+            var head = document.getElementsByTagName('head')[0],
+            script = document.createElement('script');
+            script.src = name + '.js';
+            head.appendChild(script);
+            console.log(name);
+            selected(name);
+        }
+       
+
+        </script>
+
+    </body>
+</html>
+<!-- 
+
+
+-->
