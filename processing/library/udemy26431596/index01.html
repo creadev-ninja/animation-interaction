@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spite Animations</title>
+    <link rel="stylesheet" href="style.css" />      
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+       <form name="formA" method="post">
+            <label>Choose a script</label>
+            <select name="listA" onchange="change()">
+                <option value="">none</option>
+                <option value="?name=script01">Step 1</option>
+                <option value="?name=script02">Step 2</option>
+                <option value="?name=script03">Step 3</option>
+                <option value="?name=script04">Step 4</option>
+                <option value="?name=script05">Step 5</option>
+                <option value="?name=script06">Step 6</option>
+                <option value="?name=script07">Step 7</option>
+                <option value="?name=script08">Step 8</option>
+            </select>
+        </form>  
+
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        console.log(name);
+        
+        function change() {
+            if (window.document.formA.listA.selectedIndex != 0) {
+                window.location = window.document.formA.listA.options
+                [document.formA.listA.selectedIndex].value
+            }
+        }
+
+        function selected(val) {
+            const slti = window.document.formA.listA.options
+            [document.formA.listA.selectedIndex].value;
+            console.log('slti = ' + slti + ' / ' + '?name='+val);
+            if( slti == '?name='+val) {slti.setAttribute('selected', true);}
+        }
+
+        if(name != 0) {
+            var head = document.getElementsByTagName('head')[0],
+            script = document.createElement('script');
+            script.src = name + '.js';
+            head.appendChild(script);
+            console.log(name);
+            selected(name);
+        }
+       
+
+        </script>
+</body>
+</html>
