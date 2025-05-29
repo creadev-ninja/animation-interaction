@@ -4,6 +4,7 @@ Here you will find details and references for the animations and interactions.
 
 ## Practice
 
+- [**anim-practice-021**](processing/anim-practice-022.md) - JS Vanilla from _JavaScript Game Development for Beguinnenrs : Sprite Animation_ book 4 - item 4
 - [**anim-practice-021**](processing/anim-practice-021.md) - JS Vanilla from _JavaScript Game Development for Beguinnenrs : Sprite Animation_ book 4 - item 1
 
 - [**anim-practice-020**](processing/anim-practice-020.md) - p5.js from _Introduction to creative coding with p5js_ book 3 - item 5

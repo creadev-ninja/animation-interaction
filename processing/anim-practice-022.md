@@ -1,4 +1,4 @@
-# Anim-practice-021
+# Anim-practice-022
 
 Library 
 - EAN : udemy26431596
@@ -9,6 +9,4 @@ Library
 
 Sprite animation with Vanilla JavaScript explained
 
-[writing code](../processing/library/udemy26431596/index01.html)
-
-[writing code: static](../processing/library/udemy26431596/index02.html)
+[Writing code: full animation](../processing/library/udemy26431596/index03.html)
