@@ -1,10 +1,3 @@
-let playerState = 'idle';
-const dropdown = document.getElementById('animations');
-dropdown.addEventListener('change', function(e){
-    playerState = e.target.value; // values from select
-    console.log(playerState);
-})
-
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 //console.log(ctx);
@@ -15,7 +8,7 @@ const playerImage = new Image();
 playerImage.src = 'shadow_dog.png';
 const spriteWidth = 575; 
 const spriteHeight = 523; 
-
+let playerState = 'run';
 //let frameX = 0; // on va pouvoir 
 //let frameY = 4; // animer la bête <---------------------------
 let gameFrame = 0;
@@ -79,6 +72,18 @@ console.log(spriteAnimations);
 function animate() {
     ctx.clearRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
     let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations[playerState].loc.length; 
+    /*  6 frames (animations)
+        gameFrame/staggerFrames         position
+        0/5 = 0     Math.floor(0) = 0   0%6 = 0             0%6 = 0  <--
+        1/5 = 0.2   Math.floor(0.2)=0   0%6 = 0             1%6 = 1
+        2/5 = 0.4   Math.floor(0.4)=0   0%6 = 0             2%6 = 2
+        3/5 = 0.6   Math.floor(0.6)=0   0%6 = 0             3%6 = 3
+        4/5 = 0.8   Math.floor(0.8)=0   0%6 = 0             4%6 = 4
+        5/5 = 1     Math.floor(1) = 1   1%6 = 1             5%6 = 5
+                                                            6%6 = 0  <--
+                                                            7%6 = 1
+                                                            ...
+    */
     let frameX = spriteWidth * position;
     let frameY = spriteAnimations[playerState].loc[position].y;
 
