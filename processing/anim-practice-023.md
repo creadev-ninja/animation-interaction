@@ -6,6 +6,8 @@ Library
 - Author : Benedict GROB, Hartmut BOHNACKER, Julia LAUB, Claudius LAZZERONI
 - pages 46
 - exemple : p 1 - p 4.3.4
+- package : https://github.com/generative-design/Code-Package-p5.js/releases/tag/v1.4.3
+- site Internet : http://www.generative-gestaltung.de/2/
 
 The deveopmment environment
 
