@@ -70,4 +70,5 @@ The developmment environment
 [P_2_3_3_01_TABLET](library/9781616897581/01_P/P_2_3_3_01_TABLET/) <br>
 [P_2_3_4_01](library/9781616897581/01_P/P_2_3_4_01/) <br>
 [P_2_3_5_01_TABLET](library/9781616897581/01_P/P_2_3_5_01_TABLET/) <br>
+[P_2_3_6_01](library/9781616897581/01_P/P_2_3_6_01/) <br>
 
